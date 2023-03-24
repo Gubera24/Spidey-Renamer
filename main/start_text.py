@@ -5,9 +5,9 @@ from config import ADMIN
 
 @Client.on_message(filters.command("start") & filters.private)                             
 async def start_cmd(bot, msg):
-    txt="This is personal use bot 🙏. Do you want your own bot? 👇 Click the source code to deploy"
+    txt="This is personal use bot 🙏. Do you want Fastest Rename Bot? 👇 Click the Rename Bot Below 👇"
     btn = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🤖 SOURCE CODE", url="https://github.com/Gubera24/Spidey-Renamer")
+        InlineKeyboardButton("🤖 RENAME BOT", url="https://t.me/Atamix_Rename_Bot")
         ],[
         InlineKeyboardButton("👻 Horror Movie's Tamil", url="https://t.me/+gcjBVRjoRZcwYTQ1")
     ]])
@@ -18,7 +18,7 @@ async def start_cmd(bot, msg):
 
 @Client.on_callback_query(filters.regex("start"))
 async def start(bot, msg, cb=True):   
-    txt=f"hai {msg.from_user.mention} i am simple rename bot with personal usage.\nthis bot is made by <b><a href=https://github.com/MrMKN>MrMKN</a></b>"                                     
+    txt=f"hai {msg.from_user.mention} i am simple rename bot with personal usage.\nthis bot is made by <b><a href=https://t.me/+gcjBVRjoRZcwYTQ1>Horror Movies Tamil</a></b>"                                     
     button= [[
         InlineKeyboardButton("🤖 Horror Updates", url="https://t.me/+gcjBVRjoRZcwYTQ1")
         ],[
