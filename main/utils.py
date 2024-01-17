@@ -3,7 +3,7 @@ import math
 import os
 import time
 
-PROGRESS_BAR = "\n\n🎃 : {b} | {c}\n🚀 : {a}%\n👾 : {d}/s\n⌚️ : {f}"
+PROGRESS_BAR = "\n\n🎃 : {b} | {c}\n❤️‍🔥 : {a}%\n⚡️ : {d}/s\n⌚️ : {f}"
 
 async def progress_message(current, total, ud_type, message, start):
     now = time.time()
@@ -17,8 +17,8 @@ async def progress_message(current, total, ud_type, message, start):
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)                                    
         progress = "\n{0}{1}".format(
-            ''.join(["⬢" for i in range(math.floor(percentage / 5))]),
-            ''.join(["⬡" for i in range(20 - math.floor(percentage / 5))]))                                  
+            ''.join(["❄️" for i in range(math.floor(percentage / 5))]),
+            ''.join(["🔥" for i in range(20 - math.floor(percentage / 5))]))                                  
         tmp = progress + PROGRESS_BAR.format(
             a=round(percentage, 2),
             b=humanbytes(current),
